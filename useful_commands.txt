@@ -10,9 +10,6 @@ In bash_profile add
 DEFAULT=$PS1
 PS1="\W> "
 
-
-
-
 * git
 ** Initialization
 
