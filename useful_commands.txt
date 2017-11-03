@@ -1,0 +1,11 @@
+* Ethereum
+
+** Execution
+geth console 2>>/tmp/eth.log
+
+* bash
+** Prompt
+In bash_profile add
+
+DEFAULT=$PS1
+PS1="\W> "
