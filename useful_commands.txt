@@ -23,6 +23,8 @@ git commit -m "first commit"
 git remote add origin https://github.com/VinicioGonzalez/useful_commands.git
 git push -u origin master
 
+** Ignore
+Add in .gitignore_global all the files and/or extensions
 
 # Oct 2017
 # Owner: Vinicio G
