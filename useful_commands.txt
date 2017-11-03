@@ -9,3 +9,49 @@ In bash_profile add
 
 DEFAULT=$PS1
 PS1="\W> "
+
+
+
+
+* git
+** Initialization
+
+echo "# useful_commands" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/VinicioGonzalez/useful_commands.git
+git push -u origin master
+
+
+# Oct 2017
+# Owner: Vinicio G
+# Purpose: This file record some useful commands for Linux
+#
+
+
+Operating System
+****************
+
+Battery check: acpi
+
+
+
+
+Emacs
+*****
+
+Go background in emacs: C-z
+Go foregraound: fg in terminal to go foreground
+Menu: F10
+Menu: menu-bar-open
+
+Terminal
+********
+
+Change font size: sudo dpkg-reconfigure console-setup
+Time zone (GMT-4 UAE): sudo dpkg-reconfigure tzdata
+Disable X: systemctl set-default multi-user.target
+Enable X: systemctl set-default graphical.target
+
+emacs -batch -l dunnet
