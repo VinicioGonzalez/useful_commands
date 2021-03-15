@@ -1,0 +1,58 @@
+* This file holds all useful commands that I am finding
+[2021-03-13 Sat]
+
+** Latex
+*** Installing extra libraries in TexLive
+sudo apt-get install texlive-latex-extra 
+
+** Terminal GNU/Linux
+
+*** Make big fonts in terminal (independent of X)
+setfont /usr/share/consolefonts/Lat2-Terminus32x16.psf
+
+*** Remaping keys
+
+/etc/default/keyboard
+
+XKBOPTIONS="lv3:ralt_alt,compose:menu,ctrl:nocaps"
+
+** GPG
+
+*** Purism gpg  manual
+
+https://docs.puri.sm/Librem_Key/Getting_Started/User_Manual.html#managing-gpg-keys
+
+
+*** Encrypting a file 
+
+gpg -e -r USERNAME ~USERNAME/filename
+
+cat file | gpg --output file.gpg --encrypt --recipient vgusv@yahoo.com
+
+** emacs
+
+Example of adding a new repository for packages [2021-03-15 Mon]
+
+(require 'package)
+(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
+;; Comment/uncomment this line to enable MELPA Stable if desired.  See `package-archive-priorities`
+;; and `package-pinned-packages`. Most users will not need or want to do this.
+;;(add-to-list 'package-archives '("melpa-stable" . "https://stable.melpa.org/packages/") t)
+(package-initialize)
+
+Then refresh the list
+
+M-x package-list-packages
+
+and 
+
+M-x package-refresh-contents
+
+and
+
+M-x package install RET magit RET
+
+** Git
+
+Manual examples
+https://git-scm.com/book/en/v2/Getting-Started-Getting-Help
